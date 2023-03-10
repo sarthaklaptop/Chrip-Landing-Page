@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* width: 90%; */
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+/* navbar */
+.navbar{
+    background-color: #fbf8f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+}
+.logo p{
+    color: #3180f5;
+    font-weight: 700;
+}
+.pages{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.pages a{
+    text-decoration: none;
+    color: #83807f;
+}
+.btn{
+    background-color: #1ca0f2;
+    border: none;
+    display: flex;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    gap: 0.2rem;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-btn{
+    width: 38px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Main Content */
+.content{
+    display: flex;
+    background-color: #fbf8f3;
+    padding: 1rem 8rem;
+    gap: 2rem;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    /* width: ; */
+    padding-right: 2rem;
+}
+.content-left h1{
+    font-size: 60px;
+}
+.desc{
+    color: #83807f;
+}
+.btnns{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btnns a{
+    text-decoration: none;
+    color: #1ca0f2;
+}
+
+/* Features */
+.features{
+    background-color: #fefeff;
+    padding: 4rem 8rem;
+}
+.features h1{
+    font-size: 45px;
+}
+.features-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.desc-head{
+    color: black;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+.boxx{
+
+    padding: 2rem;
+    border: 1px solid #e9e8e8;
+}
+.desc-desc{
+    color: #737272;
+}
+
+/* Reviews */
+.customer-reviews{
+    background-color: #d7f4f4;
+    padding: 4rem 8rem;
+}
+.customer-reviews h1{
+    margin: 2rem 0;
+}
+.reviews-conteiner{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.reviews{
+    width: 33%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 1.5rem;
+    /* display: flex; */
+    /* gap: 1rem; */
+}
+.user-head{
+    display: flex;
+    justify-content: space-between;
+}
+.user-id{
+    display: flex;
+    gap: 0.5rem;
+}
+.user-name p:first-of-type{
+    font-weight: 600;
+}
+.user-name p:last-of-type{
+    color: #83807f;
+}
+.user-text{
+    padding: 2rem 0;
+}
+.user-text, .user-likes{
+    color: #83807f;
+}
+.user-likes{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Pricing */
+.pricing{
+    background-color: #fefeff;
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pricing-div{
+    border: 1px solid #fdc870;
+    background-color: #faf8f2;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+}
+.monthly{
+    font-size: 15px;
+    color: #727273;
+}
+.price{
+    font-size: 15px;
+    color: #727273;
+}
+.price span{
+    color: #000101;
+    font-size: 30px;
+    font-weight: 550;
+    
+}
+
+.features-unlock{
+    border-top: 1px solid #83807f;
+    border-bottom: 1px solid #83807f;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.features-unlock-char{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.features-unlock-char p{
+    font-size: 13px;
+    color: #a3a19e;
+}
+
+.pricing-btn{
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* Footer */
+.footer{
+    background-color: #d7f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+}
+.links img{
+    cursor: pointer;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+}
+@media all and (max-width:500px) {
+    .navbar{
+        display: flex;
+        padding: 0.8rem;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .pages a{
+        /* visibility: hidden; */
+        display: none;
+    }
+    .pages .btn{
+        display: none;
+    }
+    .menu-btn{
+        display: flex;
+    }
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+    }
+    .content-right img{
+        width: 350px;
+    }
+    .content-left{
+        /* display: flex; */
+        padding-right: 0;
+    }
+    .content-left h1{
+        /* display: flex; */
+        font-size: 38px;
+    }
+    .btnns a{
+        display: none;
+    }
+    .btnns button{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .features{
+        /* display: flex; */
+        padding: 1rem 2rem;
+    }
+    .features h1{
+        font-size: 40px;
+        padding-bottom: 1rem;
+    }
+    .features-box{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .customer-reviews{
+        padding: 1rem 2rem;
+        height: 129%;
+    }
+    .reviews-conteiner{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .reviews{
+        width: 100%;
+    }
+
+    .pricing{
+        padding: 3rem 2rem;
+    }
+    .ctr{
+        text-align: center;
+    }
+    .features-unlock-char{
+        display: flex;
+        align-items: start;
+        gap: 0.8rem;
+    }
+    .features-unlock-char p{
+        font-size: 18px;
+    }
+    .features-unlock-char img{
+        width: 20px;
+    }
+
+    .footer{
+        padding: 1rem 2rem;
+    }
+}
